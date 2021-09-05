@@ -44,7 +44,7 @@
       <div class="ingredients">
         <%= form.fields_for :ingredients, @recipe.recipe_ingredients, dynamic: true do |ff| %>
           <%= render partial: "ingredient_fields", locals: { f: ff, l: form, recipe: :recipe }  %>
-          <%=puts "LOUIS RANDALL THE PARAMS: #{params.inspect}" %>
+          <%=puts "LOUIS RANDALL THE cool PARAMS: #{params.inspect}" %>
         <% end %>
       </div>
 
