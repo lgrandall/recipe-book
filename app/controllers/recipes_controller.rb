@@ -133,7 +133,7 @@ class RecipesController < ApplicationController
   def recipe_instruction_creation(recipe, instruction_params)
     puts "LOUIS RANDALL instruction_params: #{instruction_params}"
     instruction_params.each do |key, value|
-      puts "LOUIS RANDALL THE VALUE"
+      puts "LOUIS RANDALL THE VALUE "
       recipe.recipe_instructions.find_or_create_by(instruction_id: value[0], order: value[1])
     end
   end
